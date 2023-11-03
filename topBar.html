@@ -1,0 +1,31 @@
+ <!-- menu bar -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/topbar.css">
+ </head>
+ <body>
+
+ <ul>
+  <li><a href="bac_Home.php">Home</a></li>
+  <li><a href="bac_job.php">Jobs</a></li>
+  <li><a href="#Add link">About</a></li>
+  <li><a href="bac_Contact.php">Contact</a></li>
+  <li><a href="#Add link">Help</a></li>
+  <div class="dropdown" style="float:right;">
+  <li onclick="checker()" style="float:right"><a class="active" href="logout.php">Login</a></li>
+</ul>
+
+</div>
+<script>
+  function checker() {
+    var result = confirm('Do you want to Log out?');
+    if (result === false) {
+      event.preventDefault();
+    }
+  }
+  </script>
+ </body>
+
+ </html>
